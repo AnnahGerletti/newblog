@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!---Basic Page Needs---------------->
+      <title>Annah's experience EDA</title>
+      <meta charset="utf-8">
+    <!---mobile specific metas--------->
+      <meta id="meta" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Font----------------------------->
+      <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <!---css ----------------------------->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link href="styles/cover-page.css" rel="stylesheet" type="text/css">
+    <!--scripts --->
+      <script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script>
+      <script type="text/javascript" src="javascript/cover.js"></script>
+
+      <!--adding tab icon (favicon)-->
+      <link rel="icon" href="images/girly-skull.jpg">
+  </head>
+  <body>
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section hero">
+      <div class="container">
+        <div id="aboutMeRow" class="row">
+          <div class="headings">
+            <h3 class="shadow spacedout">Annah Gerletti</h3>
+            <h6 class="shadow">
+            A history of work completed while studying at Enspiral Dev Academy, Wellington.
+          </h6>
+            <a class="button" href="#" onclick="unhide('hiddenRow', 'aboutMeRow');">About Me</a>
+           </div>
+         </div><!--hidden div for about me info-->
+          <div id="hiddenRow" class="row">
+            <div class="headings">
+              <h3 class="shadow spacedout">Holy Cow</h3>
+              <h6 class="shadow">
+                <p>This is just an excuse to have something cool.</p>
+              </h6>
+              <a class="button" href="#" onclick="unhide('aboutMeRow','hiddenRow');">close</a>
+             </div>
+            </div>
+          </div>
+      </div>
+
+    <div class="secton blog">
+      <div class="container">
+        <div class="row">
+          <div class="headings">
+            <h3 class="shadow spacedout">Blogs</h3>
+            <h6 class="shadow">A series of posts reflecting technical knowledge and mindfulness wellbeing.</h6>
+            <a class="button" href="blogs.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="section projects">
+        <div class="container">
+          <div class="row">
+            <div class="headings">
+              <h3 class="shadow spacedout">My Work</h3>
+              <h6 class="shadow">Completed projects while at Dev Academy.</h6>
+              <a class="button" href="./client/Components/Portfolio.jsx">Portfolio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div id="app"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
