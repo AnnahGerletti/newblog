@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!---Basic Page Needs---------------->
+    <title>Blogs</title>
+    <meta charset="utf-8">
+  <!---mobile specific metas--------->
+    <meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0"/>
+  <!--Font----------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  <!---css ----------------------------->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link href="../styles/skeleton.css" rel="stylesheet" type="text/css">
+  <!--JS scripts --->
+    <script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script>
+  <!--adding tab icon (favicon)-->
+    <link rel="icon" href="../images/girly-skull.jpg">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>Scope and Variables</h1>
+        <h5> June 22, 2017</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text">
+      <h3>What's 'scope', and how does it work in JavaScript.</h3>
+      <p>JavaScript Scope deals specifically with variables. Objects and peramiters are also variables.</p>
+      <p>Scope describes the amount of access you have to the variables.</p>
+      <p>Scope can be globally and locally defined.</p>
+      <p>
+        <strong>Global scope</strong> is very simple – variables that are set outside of functions are globally known.
+      </p>
+      <p><strong>Local scope</strong> - is created by a function.</p>
+      <p>For example:</p>
+      <pre><code>function myName(name){
+        var last = 'Smith';
+        console.log(myName + last);
+      };
+      // John Smith</code></pre>
+      <p>
+        The variable <code>last</code> is only defined within the <code>myName</code> function meaning this variable becomes locally scoped. If <code>var last</code> was called outside of the function there would be an error message saying <code>var last</code> is not defined.
+      </p>
+
+      <p>Here is an example of variables that are defined within nested functions:</p>
+      <pre><code>function showMe(name){
+        var message = 'Help!';
+        if(name =='John'){
+          lookLeft('Steve');
+        }
+        function lookLeft(player){
+          console.log(name + 'is running from' + player);
+          console.log(player + 'says' + message)
+        }
+      }
+      // John is running from Steve
+      // Steve says Help!</code></pre>
+
+      <p>
+        There are three variables defined above, <code>name</code>, <code>message</code>, <code>player</code>. The variable <code>player</code> nested inside the <code>lookLeft</code> function is locally scoped and can only be called from within that specific function. Variables <code>name</code> and <code>message</code> are locally scoped but can be called in both the <code>showMe</code> and <code>lookLeft</code> functions.
+      </p>
+    </div>
+  </div>
+
+  <div class="blog-button">
+      <a class="button" href="../index.html">Home</a>
+      <a class="button" href="../blogs.html">Blogs</a>
+  </div>
+
+<footer class="footer u-max-full-width"><!--can style the footer and header later in the css-->
+  <div class="container">
+    <div class="row">
+      <a href="https://github.com/AnnahGerletti"><img class="icon" src="../images/github.png"/></a>
+      <a href="https://www.instagram.com/on_a_boat/"><img class="icon" src="../images/instagram.png"/></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

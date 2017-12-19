@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+
+<h1>Wish list</h1><br>
+1. Tombstone fixed image on page. CSS script http://www.csszengarden.com/136/
+      <xmp> .extra1 { position:fixed; bottom:0; left:540px; background:url(r3_zen666_tombstone.png) no-repeat top left; width:227px; height:267px; }
+      </xmp>
+
+2. Timeline blog by<br> http://codyhouse.co/demo/vertical-timeline
+I like the format and scrolling features CSS script **Larger blue 'header' (diff from head) with centered title
+      <xmp>header { height: 200px; line-height: 200px; text-align: center; background: #303e49; }
+      </xmp>
+
+**CSS adding boarder boxes, applied to *everywhere, before and after, <br>
+      <xmp>*, *:after, *:before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;</xmp>
+
+**CSS the small labeling image next to each text box of the timeline
+      <xmp> .cd-timeline-img { position: absolute; top: 0; left: 0; width: 40px; height: 40px;       border-radius: 50%; box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05); }
+        <xmp>
+
+        **CSS Small space 'before' between image and body of text.
+        <xmp>.cd-timeline-content::before { content: ''; position: absolute; top: 16px; right: 100%; height: 0; width: 0; border: 7px solid transparent; border-right: 7px solid white; }
+        </xmp>
+
+        **CSS The text boxes made up of many smaller boxes, such as a h2,p,'read more' link/button, date,CSS script
+        <xmp>.cd-timeline-content { position: relative; margin-left: 60px; background: white; border-radius: 0.25em; padding: 1em; box-shadow: 0 3px 0 #d7e4ed; }
+        </xmp>
+
+        **HTML script of all the boxes referenced in text box.
+        <xmp>
+            <div class="cd-timeline-content">
+                <h2>Title of section 1</h2>
+                <p>text</p>
+                <a href="#0" class="cd-read-more">Read more</a>
+                <span class="cd-date">Jan 14</span>
+            </div>
+        </xmp>
+
+3. Ngas website, has these nice view links with headers<br> https://ngas-wakefield.github.io/
+        **html code
+        <xmp>
+            <div class="col-xs-6 col-lg-4">
+                <h3>Time Management and Habits</h3>
+                <p><a class="btn btn-default" href="blog/time-and-habit-management.html">View »</a></p>
+            </div>
+        </xmp>
+
+Bootstrap CSS file to create view button
+        <xmp>.btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation;
+            cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+        </xmp>
+
+4. Anna P blog has an element that types the title across the screen<br>
+https://anna-podhajska.github.io/index.html <br>
+      **HTML code<br>
+      <xmp>
+        <div class="typewriter">
+      <h1> First steps into programming </h1>
+    </div>
+  </xmp>
+      **CSS code<br>
+      <xmp>/*typewriter effect starts here:*/
+  .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}</xmp>

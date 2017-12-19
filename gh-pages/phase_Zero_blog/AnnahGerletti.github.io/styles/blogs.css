@@ -1,0 +1,33 @@
+
+.container{
+  margin-left: 5em;
+}
+
+.spacedout{
+  letter-spacing: 0.3em;
+  font-weight: bold;
+}
+
+.headings{
+  position: relative;
+  text-align: left;
+  top: 3em;
+  color: white;
+}
+
+.coverImage{
+  height: 30em;
+  background-size: cover;
+  background-image: url("../images/barcelona5.png");
+  background-position: bottom;
+}
+}
+
+.button{
+  border-radius: 10px;
+}
+
+.icon {
+  height:1.5em;
+  width:1.5em;
+}
